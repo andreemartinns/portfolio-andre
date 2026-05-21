@@ -131,7 +131,7 @@ Página dedicada a projetos com:
 ## 👨‍💻 Autor
 
 **André Luiz Jesus Martins**  
-Estudante de Desenvolvimento de Software  
+Estudante de Sistemas para Internet
 
 ---
 
