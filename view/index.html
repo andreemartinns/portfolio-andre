@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>André Luiz — Desenvolvedor de Software</title>
+  <meta name="description" content="Portfólio de André Luiz Jesus Martins — estudante de Desenvolvimento de Software focado em web, front-end e back-end." />
+  <meta name="author" content="André Luiz Jesus Martins" />
+  <meta name="theme-color" content="#0a0e1a" />
+  <meta property="og:title"       content="André Luiz — Desenvolvedor de Software" />
+  <meta property="og:description" content="Portfólio pessoal com projetos, habilidades e contato." />
+  <meta property="og:type"        content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="page-loader" role="status" aria-label="Carregando">
+    <p class="loader-logo">&lt;André /&gt;</p>
+    <div class="loader-bar" aria-hidden="true"></div>
+  </div>
+
+  <!-- SKIP LINK -->
+  <a href="#main-content" id="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- OVERLAY MOBILE -->
+  <div id="menu-overlay" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" role="banner">
+    <a href="#home" id="nav-logo" aria-label="Voltar ao início"></a>
+    <button id="menu-toggle" type="button"
+            aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+    <nav aria-label="Navegação principal">
+      <ul id="nav-links" role="list"></ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- HERO -->
+    <section id="home" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="hero-badge">Disponível para oportunidades</div>
+            <h1 id="hero-name"></h1>
+            <p id="hero-role" aria-label="Cargo profissional"></p>
+            <p id="hero-tagline"></p>
+            <div class="hero-cta" role="group" aria-label="Ações principais">
+              <a id="cta-github" href="#" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-primary">⌥ Ver GitHub</a>
+              <a id="cta-portfolio" href="portfolio.html"
+                 class="btn btn-ghost">📁 Ver Portfólio</a>
+              <a id="cta-contact" href="#contact"
+                 class="btn btn-ghost">✉ Contato</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="false">
+            <div style="position:relative;display:inline-block;">
+              <div id="hero-avatar"></div>
+              <div class="avatar-ring" aria-hidden="true"></div>
+              <div id="hero-status" class="hero-status-badge" aria-live="polite"></div>
+              <div class="tech-float" aria-hidden="true">HTML5</div>
+              <div class="tech-float" aria-hidden="true">Node.js</div>
+              <div class="tech-float" aria-hidden="true">Python</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header" data-animate>
+          <span class="section-label">// sobre</span>
+          <h2 id="about-title" class="section-title">Quem sou <span class="accent">eu</span></h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text" data-animate="left">
+            <div id="about-bio"></div>
+            <div class="about-links">
+              <a href="portfolio.html" class="btn btn-primary">Ver Portfólio Completo</a>
+              <a href="#contact"       class="btn btn-ghost">Contato</a>
+            </div>
+          </div>
+          <aside class="about-meta" aria-label="Informações rápidas" data-animate="right">
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">📍</span>
+              <div><p class="meta-label">Localização</p><p class="meta-value" id="about-location"></p></div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">✉️</span>
+              <div><p class="meta-label">E-mail</p><p class="meta-value" id="about-email"></p></div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">🎓</span>
+              <div><p class="meta-label">Área</p><p class="meta-value">Desenvolvimento de Software</p></div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">💡</span>
+              <div><p class="meta-label">Interesses</p><p class="meta-value">Front-end · Back-end · Open Source</p></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header" data-animate>
+          <span class="section-label">// habilidades</span>
+          <h2 id="skills-title" class="section-title">Stack <span class="accent">Técnico</span></h2>
+          <p class="section-subtitle">Tecnologias que uso no dia a dia — em constante aprendizado.</p>
+        </header>
+        <div id="skills-grid" role="list" aria-label="Habilidades técnicas" data-animate></div>
+      </div>
+    </section>
+
+    <!-- LANDING PAGES -->
+    <section id="landing" aria-labelledby="landing-title">
+      <div class="container">
+        <header class="section-header" data-animate>
+          <span class="section-label">// referências</span>
+          <h2 id="landing-title" class="section-title">Tipos de <span class="accent">Landing Pages</span></h2>
+          <p class="section-subtitle">Estruturas modernas para diferentes objetivos de negócio.</p>
+        </header>
+        <div id="landing-grid" role="list" aria-label="Exemplos de landing pages" data-animate></div>
+        <div style="margin-top:var(--space-xl);" data-animate>
+          <p class="portfolio-examples-title">Tipos de Portfólios Profissionais</p>
+          <div id="portfolio-examples" role="list" aria-label="Tipos de portfólios"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header" data-animate>
+          <span class="section-label">// contato</span>
+          <h2 id="contact-title" class="section-title">Vamos <span class="accent">Conversar</span></h2>
+          <p class="section-subtitle">Aberto a oportunidades, colaborações e projetos interessantes.</p>
+        </header>
+        <div class="contact-grid">
+          <aside aria-label="Informações de contato" data-animate="left">
+            <div class="contact-info">
+              <div>
+                <h3>Entre em contato</h3>
+                <p>Para oportunidades de trabalho, projetos colaborativos ou trocar ideias sobre tecnologia!</p>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">✉️</span>
+                <div><p class="contact-item-label">E-mail</p><a id="contact-email" href="#"></a></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">🟢</span>
+                <div><p class="contact-item-label">Status</p>
+                  <p id="contact-availability" style="font-size:.9rem;color:var(--accent-3);"></p></div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-icon" aria-hidden="true">⏱️</span>
+                <div><p class="contact-item-label">Resposta</p>
+                  <p id="contact-response" style="font-size:.9rem;color:var(--text-secondary);"></p></div>
+              </div>
+              <div class="contact-social" role="group" aria-label="Redes sociais">
+                <a id="contact-github"   href="#" target="_blank" rel="noopener noreferrer" class="social-btn">⌥ GitHub</a>
+                <a id="contact-linkedin" href="#" target="_blank" rel="noopener noreferrer" class="social-btn">↗ LinkedIn</a>
+              </div>
+            </div>
+          </aside>
+          <div data-animate="right">
+            <form id="contact-form" novalidate aria-label="Formulário de contato">
+              <div id="form-feedback" class="form-feedback" hidden role="alert" aria-live="assertive"></div>
+              <div class="form-group">
+                <label for="form-name">Nome completo</label>
+                <input type="text" id="form-name" name="name"
+                       placeholder="Seu nome completo" autocomplete="name"
+                       aria-required="true" aria-describedby="form-feedback" />
+              </div>
+              <div class="form-group">
+                <label for="form-email">E-mail</label>
+                <input type="email" id="form-email" name="email"
+                       placeholder="seu@email.com" autocomplete="email" aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Mensagem</label>
+                <textarea id="form-message" name="message" rows="5"
+                          placeholder="Conte sobre sua ideia ou oportunidade..."
+                          aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn-submit" aria-label="Enviar mensagem">
+                Enviar Mensagem ↗
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">&lt;André /&gt;</p>
+        <p>Desenvolvido por <span id="footer-name"></span> &mdash; &copy; <span id="footer-year"></span></p>
+        <p style="font-size:.8rem;">HTML · CSS · JavaScript puro — Arquitetura MVC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scroll-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <!-- SCRIPTS (ordem: Model → View → Controller) -->
+  <script src="../model/model.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../controller/controller.js"></script>
+
+</body>
+</html>
