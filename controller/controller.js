@@ -32,8 +32,6 @@ const Controller = (() => {
       const skills    = Model.getSkills();
       const projects  = Model.getProjects();
       const filters   = Model.getProjectFilters();
-      const landings  = Model.getLandingExamples();
-      const pfExamples= Model.getPortfolioExamples();
       const contact   = Model.getContact();
   
       View.renderNav(navItems, profile);
@@ -42,8 +40,6 @@ const Controller = (() => {
       View.renderSkills(skills);
       View.renderProjectFilters(filters, state.activeFilter);
       View.renderProjects(projects);
-      View.renderLandingExamples(landings);
-      View.renderPortfolioExamples(pfExamples);
       View.renderContact(contact);
       View.renderFooter(profile);
     };
